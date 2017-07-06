@@ -19,6 +19,7 @@ function reducer(state = initialState, action) {
                 numofBubbles: Number(action.result) + Number(state.numofBubbles)
             });
         case GET_UNSER_INFO:
+            console.line(action.result, 11);
             return action.result;
         default: 
             return state;

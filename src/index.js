@@ -10,20 +10,21 @@ import registerServiceWorker from './registerServiceWorker';
 
 window.init = function (data) {
     alert('data');
-    console.log(data)
+console.log(data);
     store.dispatch({
         type: 'GET_UNSER_INFO',
         result: data
     })
+    render(
+        <MuiThemeProvider>
+            <Provider store={store}>
+                {routes(browserHistory)}
+            </Provider>
+        </MuiThemeProvider>,
+        document.getElementById('root')
+    );
+    // ReactDOM.render(<App />, document.getElementById('root'));
+    registerServiceWorker();
 }
 
-render(
-    <MuiThemeProvider>
-        <Provider store={store}>
-            {routes(browserHistory)}
-        </Provider>
-    </MuiThemeProvider>,
-    document.getElementById('root')
-);
-// ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+
