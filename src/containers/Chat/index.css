@@ -1,0 +1,46 @@
+html,body,#root,.App, .chat{height:100%;margin:0;padding:0;}
+.header {
+    height: 10%;
+}
+.nav {
+    height: 8%;
+    line-height: 8%;
+    display: flex;
+    display: -webkit-flex;
+    flex: 1;
+    justify-content: space-between;
+    color: #a5a5a5;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 10px;
+}
+
+.shield {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.add-friends {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.chat-conatiners {
+    height: 74%;
+    overflow: scroll;
+}
+
+.input-area {
+    width: 100%;
+    height: 7%;
+    border-top: 1px solid #e3e3e3;
+}
+
+.input {
+    padding-left: 5px;
+    width: 76%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}

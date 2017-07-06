@@ -1,0 +1,45 @@
+.bubble-map {
+    position: relative;
+}
+
+.bubble {
+    background-color: #3E50B4;
+    min-width: 40px;
+    max-width: 80px;
+    max-height: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: -18px;
+    left: 16px;
+}
+
+.arrow {
+    width: 15px;
+    height: 28px;
+    color: #3E50B4;
+    left: -7px;
+    top: 10px;
+    position: absolute;
+    border-width: 10px 0px 0px;
+    border-style: solid;
+    border-color: currentcolor transparent transparent;
+    border-radius: 13px 0px 0px;
+}
+
+.talk {
+    height: 20px;
+    min-width: 40px;
+    max-width: 80px;
+    color: #ffffff;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    padding: 0px 5px 0px 10px;
+}
+.bubble-map-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #3E50B4;
+}

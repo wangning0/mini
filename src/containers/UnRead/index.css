@@ -1,0 +1,42 @@
+.unread {
+    height: 100%;
+}
+.unread .header {
+    height: 10%;
+}
+
+.unread .unread-body {
+    height: 80%;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.unread-item {
+    padding-top: 10px;
+    border-bottom: 1px solid #d1d3d4;
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+}
+
+.unread-item .unread-item-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #d1d3d4;
+    float: left;
+}
+
+.unread-item .unread-item-body {
+    float: left;
+    margin-left: 15px;
+}
+
+.unread-item .unread-item-body .unread-item-body-name{
+    color: #232323;
+    font-size: 16px;
+}
+
+.unread-item .unread-item-body .unread-item-body-message{
+    color: #737373;
+    font-size: 14px;
+}

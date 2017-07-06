@@ -1,0 +1,30 @@
+.index {
+    height: 100%;
+}
+
+.index .search {
+    height: 10%;
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: #3E50B4;
+}
+
+.index .graph {
+    height: 90%;
+}
+
+.index .search .content {
+    background-color: #ffffff;
+    width: 96%;
+    height: 96%;
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    justify-content: space-around;
+}
+
+.index .search .content input {
+    outline: none;
+    border: none;
+}

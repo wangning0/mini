@@ -1,0 +1,48 @@
+.bubble {
+    background-color: #d1d3d4;
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 39px;
+    margin-top: -19px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: -8px;
+}
+
+.arrow {
+    width: 15px;
+    height: 28px;
+    color: #d1d3d4;
+    left: -10px;
+    top: 2px;
+    position: absolute;
+    border-width: 10px 0px 0px;
+    border-style: solid;
+    border-color: currentcolor transparent transparent;
+    border-radius: 13px 0px 0px;
+}
+
+.right-arrow {
+    width: 15px;
+    height: 28px;
+    color: #d1d3d4;
+    right: -10px;
+    top: 3px;
+    position: absolute;
+    border-width: 10px 0px 0px;
+    border-style: solid;
+    border-radius: 0px 13px 0px 0px;
+}
+
+.right-bubble {
+    float: right;
+}
+
+.talk {
+    max-width: 200px;
+    min-width: 200px;
+    height: 35px;
+    text-indent: 10px;
+    color: #8e8f90;
+    line-height: 35px;
+}
