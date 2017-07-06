@@ -16,5 +16,4 @@ render(
         </MuiThemeProvider>,
         document.getElementById('root')
     );
-    registerServiceWorker();();
-}
+    registerServiceWorker();

@@ -29,5 +29,5 @@
 window.init = function(data) {
     alert('data');
     window.data = data;
-    import './innerIndex'
+    require('./innerIndex')
 }
