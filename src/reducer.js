@@ -6,7 +6,7 @@ import {
 //const info = JSON.parse($.testinfo());
 //const info = $.testinfo();
 // console.log(info);
-const initialState = {};
+const initialState = window.data; // eslint-disable-line
 
 /**
  * {"ret":200,"data":{"code":0,"msg":"login success","UserID":"7","numofBubbles":1},"msg":""}
