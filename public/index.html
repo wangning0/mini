@@ -56,43 +56,22 @@
   <body>
     <script type="text/javascript">
       // webview通信函数
-      /**
-       * let _data;
-      function init(data) {
-        alert(data);
-        _data = data;
-      }
-      window.$ = {
-        testinfo: () => {
-          return _data;
-        },
-        api: 'http://119.29.194.62'
-      }
-      */
-      // alert(1);
-      // var init = function(data) {
-      //   alert(data);
-      //   return data;
-      // }
-     // alert(window);
-     //alert(1);
+    var _data;
     var init =  function(data) {
         alert(data);
         _data = data;
       }
-     function getQueryString(name) {
-        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) {
-        return unescape(r[2]);
-        }
-        return null;
-      }
-    //  // alert(getQueryString('data'));
+    //  function getQueryString(name) {
+    //     var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+    //     var r = window.location.search.substr(1).match(reg);
+    //     if (r != null) {
+    //     return unescape(r[2]);
+    //     }
+    //     return null;
+    //   }
       window.$ = {
-        testinfo: () => {
-          //return JSON.parse(getQueryString('data'));
-           return {"code":0,"msg":"login success","UserID":"7","token":"8074868AE6DDDE9804FCAFB9BBDBC61E2192FBDCC6EC10ECD7AD6B2D785E30D6","username":"wangning","numofBubbles":26}
+        testinfo: function() {
+           return _data;
         },
         api: 'http://119.29.194.62'
       }

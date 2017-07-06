@@ -28,3 +28,20 @@
     outline: none;
     border: none;
 }
+
+.index .publish-bubble {
+    width: 60px;
+    position: absolute;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    right: 20px;
+    bottom: 15%;
+}
+
+.index .publish-bubble img{
+    margin: 20px auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+}

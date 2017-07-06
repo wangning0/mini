@@ -15,7 +15,7 @@ class Init extends Component {
     handleClick() {
         const { answer, question } = this.state;
         const { submitBubble, userInfo } = this.props;
-        console.log(userInfo);
+        console.log(userInfo, 12);
         // alert(navigator.geolocation.getCurrentPosition);
         submitBubble({
                 service: "Act.insertBubbleInfo",

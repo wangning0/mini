@@ -6,7 +6,7 @@ import { browserHistory, Link } from 'react-router';
 import GoogleMap from 'google-map-react';
 import MyGreatPlace from './myGreatPlace';
 import FontIcon from 'material-ui/FontIcon';
-
+import group from './group.png'
 import * as actions from './action';
 import './index.css';
 
@@ -89,6 +89,9 @@ class Graph extends Component {
                 })
               }
           </GoogleMap>
+        </div>
+        <div className="publish-bubble">
+          <img src={group} alt=""/>
         </div>
       </div>
     );
