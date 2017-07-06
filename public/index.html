@@ -56,11 +56,11 @@
   <body>
     <script type="text/javascript">
       // webview通信函数
-    var _data;
-    var init =  function(data) {
-        alert(data);
-        _data = data;
-      }
+    // var _data;
+    // var init =  function(data) {
+    //     alert(data);
+    //     _data = data;
+    //   }
     //  function getQueryString(name) {
     //     var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
     //     var r = window.location.search.substr(1).match(reg);
@@ -71,7 +71,7 @@
     //   }
       window.$ = {
         testinfo: function() {
-           return _data;
+          //  return _data;
         },
         api: 'http://119.29.194.62'
       }
