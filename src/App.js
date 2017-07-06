@@ -22,6 +22,7 @@ class App extends Component {
 
   componentWillMount() {
     const { userInfo } = this.props;
+    console.log(userInfo,11111);
     if(!userInfo.numofBubbles) {
       browserHistory.push('/init');
     } else {
