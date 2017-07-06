@@ -5,7 +5,8 @@ import * as actions from './action';
 
 class Init extends Component {
     constructor(props) {
-        super(props);
+	console.log('init')
+        super(props);'
         this.state = {
             answer: '',
             question: ''
