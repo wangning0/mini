@@ -10,6 +10,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 window.init = function (data) {
     alert('data');
+    console.log(data)
     store.dispatch({
         type: 'GET_UNSER_INFO',
         result: data
