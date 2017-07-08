@@ -64,7 +64,8 @@ class Graph extends Component {
 
   handleBubbleClick(id, username, cur_username) {
 	alert(id, 'fromname')
-alert(11);
+  alert(11);
+  alert(cur_username);
     browserHistory.push(`answer/${id}/${username}/${cur_username}`);
   }
 
