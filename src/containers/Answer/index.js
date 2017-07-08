@@ -36,7 +36,7 @@ class Answer extends Component {
             service: 'Act.getMatchPercnt',
             token: userInfo.token
         }, {
-            from: userInfo.username,
+            from: params.cur_username,
             to: params.username,
         })
     }

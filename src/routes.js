@@ -19,7 +19,7 @@ const routes = (history) => {
                         import('./containers/Graph').then(loadRoute(cb)).catch(errorLoading);
                     }}
                 />
-                <Route path="answer/:bId/:username"
+                <Route path="answer/:bId/:username/:cur_username"
                     getComponent={(location, cb) => {
                         import('./containers/Answer').then(loadRoute(cb)).catch(errorLoading);
                     }}

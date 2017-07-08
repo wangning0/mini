@@ -62,8 +62,10 @@ class Graph extends Component {
     // });
   }
 
-  handleBubbleClick(id, username) {
-    browserHistory.push(`answer/${id}/${username}`);
+  handleBubbleClick(id, username, cur_username) {
+	alert(id, 'fromname')
+alert(11);
+    browserHistory.push(`answer/${id}/${username}/${cur_username}`);
   }
 
   handleInput(e) {
@@ -75,6 +77,7 @@ class Graph extends Component {
   render() {
     const { graph } = this.props;
     const { search } = this.state;
+    alert(graph.cur_username);
     return (
       <div className="index">
         <div className="search">
@@ -93,7 +96,7 @@ class Graph extends Component {
             {
                 graph && graph.data && graph.data.map((item) => {
                   return (
-                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID, item.username)} /* Kreyser Avrora */ />
+                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID, item.username, item.cur_username)} /* Kreyser Avrora */ />
                   )
                 })
               }
