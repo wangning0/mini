@@ -29,7 +29,7 @@ class My extends Component {
         <div className="myLabelCon">
           <div></div>
           <span className="myLabel">我的标签</span>
-          <button>钮</button>
+          <button style={{outline:'none', border: 'none'}}>编辑标签</button>
         </div>
         <div className="tagCon">
           <div className="first"><span>TreveoHnadnson</span><span>TreveoHnadnson</span></div>

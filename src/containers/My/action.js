@@ -26,7 +26,7 @@ export function fetchUserInfo(data) {
         get(api, data).then(onSuccess, onError('提交失败'))
           .then(res => {
               if(res.data.code == 0) {
-                  dispatch(fetchUserInfoSuccess(res.data.result));
+                  dispatch(fetchUserInfoSuccess(res.data));
               } else {
                   dispatch(fetchUserInfoFail(res.data.msg));
               }
