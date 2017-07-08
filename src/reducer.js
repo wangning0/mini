@@ -4,10 +4,14 @@ import {
 } from './actionTypes';
 const $ = window.$; // eslint-disable-line
 // alert($.testinfo());
-const info = JSON.parse($.testinfo());
+let data = $.testinfo();
+if(typeof data == 'string') {
+    data = JSON.parse(data);
+}
+// const info = JSON.parse($.testinfo());
 //const info = $.testinfo();
 // console.log(info);
-const initialState = info; // eslint-disable-line
+const initialState = data; // eslint-disable-line
 
 /**
  * {"ret":200,"data":{"code":0,"msg":"login success","UserID":"7","numofBubbles":1},"msg":""}
