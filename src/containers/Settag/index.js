@@ -74,7 +74,7 @@ class Answer extends Component {
                 <RaisedButton
                         label="提交" 
                         primary={true}
-                        style={{marginTop: '50px', width: '250px'}}
+                        style={{marginTop: '50px', width: '300px'}}
                         onClick={() => this.handleClick()}
                     />
             </div>
