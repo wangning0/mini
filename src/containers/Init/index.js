@@ -35,12 +35,13 @@ class Init extends Component {
         }
         // window.locationChanged()
         // alert(navigator.geolocation.getCurrentPosition);
+        alert(window.data.longitude);
         submitBubble({
             service: "Act.insertBubbleInfo",
             bu_answer: answer,
             bu_question: question,
-            longtitude: '113.9345065627',
-            latitude: '22.5404030613',
+            longtitude: window.location.longitude,
+            latitude: window.location.latitude,
             UserID: userInfo.UserID,
             token: userInfo.token
         }, {
