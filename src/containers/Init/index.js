@@ -35,7 +35,6 @@ class Init extends Component {
         }
         // window.locationChanged()
         // alert(navigator.geolocation.getCurrentPosition);
-        alert(window.data.longitude);
         submitBubble({
             service: "Act.insertBubbleInfo",
             bu_answer: answer,
