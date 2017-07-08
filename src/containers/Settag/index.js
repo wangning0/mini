@@ -35,14 +35,20 @@ class Answer extends Component {
         }
     }
     handleClick() {
-        const {submitTag} = this.props;
+        const {submitTag, userInfo} = this.props;
         const chooseTags = [];
         Object.keys(this.state).map((item, index) => {
             if(this.state[item]) {
-                chooseTags.push(index + 1);
+                chooseTags.push(index);
             }
         })
-        browserHistory.push('/graph');
+        submitTag({
+            service: 'Act.insertTags',
+            UserID: userInfo.UserID,
+            token: userInfo.token,
+            tagIDs: chooseTags
+        })
+        // browserHistory.push('/graph');
         // submitTag
     }
     render() {
@@ -78,7 +84,6 @@ class Answer extends Component {
 
 function mapStateToProps(state) {
     return {
-        bubbleAnswer: state.answer,
         userInfo: state.userInfo
     }
 }
