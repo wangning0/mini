@@ -85,7 +85,7 @@ class Graph extends Component {
             </div>
         </div>
         <div className="graph">
-            <GoogleMap
+            {/*<GoogleMap
             bootstrapURLKeys={{key: "AIzaSyD1PD6JXA2zjSp2DcBSb_eldF44ojp7keM"}}
             center={this.props.center}
             zoom={this.props.zoom}
@@ -97,7 +97,7 @@ class Graph extends Component {
                   )
                 })
               }
-          </GoogleMap>
+          </GoogleMap>*/}
         </div>
         <div className="publish-bubble" onClick={() => browserHistory.push('/init')}>
           <img src={group} alt=""/>
