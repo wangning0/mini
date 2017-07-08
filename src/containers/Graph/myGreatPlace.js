@@ -13,7 +13,6 @@ export default class MyGreatPlace extends Component {
   }
 
   render() {
-    console.log('aa');
     return (
       <div className="bubble-map" onClick={this.props.onClick}>
         <div className="bubble left-bubble">

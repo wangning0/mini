@@ -8,7 +8,6 @@ const initialState = []
 function reducer(state = initialState, action) {
     switch(action.type) {
         case FETCH_UNREADS_SUCCESS:
-            console.log(action.result);
             return action.result;
         case FETCH_UNREADS_FAIL:
         default:

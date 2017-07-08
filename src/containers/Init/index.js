@@ -11,7 +11,6 @@ import './index.css';
 
 class Init extends Component {
     constructor(props) {
-	console.log('init')
         super(props);
         this.state = {
             answer: '',
@@ -26,7 +25,6 @@ class Init extends Component {
     handleClick() {
         const { answer, question } = this.state;
         const { submitBubble, userInfo } = this.props;
-        console.log(userInfo, 12);
         if(!answer || !question) {
             this.setState({
                 open: true

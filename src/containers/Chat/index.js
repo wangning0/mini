@@ -76,7 +76,6 @@ class Chat extends Component {
         this.setState({
             chatInput: ''
         })
-        console.log(userInfo, 1212);
         const data = {
             name: userInfo.username,
             message: chatInput

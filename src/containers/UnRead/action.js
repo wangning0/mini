@@ -28,7 +28,6 @@ export function fetchUnreads(data) {
         get(api, data).then(onSuccess, onError('提交失败'))
           .then(res => {
               if(res.code == 0) {
-                  console.log(res.data);
                   dispatch(fetchUnreadsSuccess(res.data));
               } else {
                   dispatch(fetchUnreadsSuccessFail(res.msg));

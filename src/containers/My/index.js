@@ -20,7 +20,6 @@ class My extends Component {
   }
   render() {
     const {my} = this.props;
-    console.log(my);
     return (
       <div className="my">
         <div className="personIntro">

@@ -42,7 +42,6 @@ class Answer extends Component {
                 chooseTags.push(index + 1);
             }
         })
-        console.log(chooseTags);
         browserHistory.push('/graph');
         // submitTag
     }
@@ -55,16 +54,16 @@ class Answer extends Component {
             <div className="set-tag">
                 <h4>选择你自己的个性标签吧～</h4>
                 <div className="tags">
-                    <RaisedButton label="Default" style={style} onClick={() => this.changeChoose(1)} icon={choose1 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(2)} icon={choose2 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" secondary={true} style={style} onClick={() => this.changeChoose(3)} icon={choose3 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(4)} icon={choose4 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(5)} icon={choose5 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(6)} icon={choose6 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(7)} icon={choose7 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(8)} icon={choose8 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(9)} icon={choose9 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="Primary" primary={true} style={style} onClick={() => this.changeChoose(10)} icon={choose10 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="娱乐" primary={true} style={style} onClick={() => this.changeChoose(1)} icon={choose1 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="动漫" primary={true} style={style} onClick={() => this.changeChoose(2)} icon={choose2 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="财经" primary={true} style={style} onClick={() => this.changeChoose(3)} icon={choose3 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="汽车" primary={true} style={style} onClick={() => this.changeChoose(4)} icon={choose4 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="体育" primary={true} style={style} onClick={() => this.changeChoose(5)} icon={choose5 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="视频" primary={true} style={style} onClick={() => this.changeChoose(6)} icon={choose6 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="科技" primary={true} style={style} onClick={() => this.changeChoose(7)} icon={choose7 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="体育" primary={true} style={style} onClick={() => this.changeChoose(8)} icon={choose8 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="搞笑" primary={true} style={style} onClick={() => this.changeChoose(9)} icon={choose9 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="美食" primary={true} style={style} onClick={() => this.changeChoose(10)} icon={choose10 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
                 </div>
                 <RaisedButton
                         label="提交" 

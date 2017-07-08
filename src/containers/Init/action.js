@@ -29,7 +29,6 @@ export function submitBubble(data, controllRoute) {
           .then(res => {
               if(res.data.code == 0) {
                   dispatch(publishSuccess(1));
-                  console.log(controllRoute);
                   if(controllRoute && controllRoute.numofBubbles) {
                     browserHistory.push('/graph');
                   } else {

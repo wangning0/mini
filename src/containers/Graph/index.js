@@ -74,7 +74,6 @@ class Graph extends Component {
 
   render() {
     const { graph } = this.props;
-    console.log(graph && graph.data);
     const { search } = this.state;
     return (
       <div className="index">

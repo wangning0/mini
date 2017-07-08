@@ -26,7 +26,6 @@ export function fetchBubbleInfo(data) {
         get(api, data).then(onSuccess, onError('获取信息失败，请重新获取'))
           .then(res => {
               if(res.data.code == 0) {
-                console.log(res.data, 111);
                 dispatch(fetchBubbleInfoSuccess(res.data))
               } else {
                 dispatch(fetchBubbleInfoFail(res.data.msg));

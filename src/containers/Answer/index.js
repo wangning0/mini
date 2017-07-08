@@ -29,7 +29,6 @@ class Answer extends Component {
             return;
         }
         const { submitAnswer, userInfo, params } = this.props;
-        console.log(params);
         submitAnswer({
             UserID: userInfo.UserID,
             BubbleID: params.bId,
@@ -63,7 +62,6 @@ class Answer extends Component {
     render() { 
         const { answer } = this.state;
         const { bubbleAnswer } = this.props;
-        console.log(bubbleAnswer && bubbleAnswer.data && bubbleAnswer.data.bu_question);
         const actions = [
         <FlatButton
             label="继续"
