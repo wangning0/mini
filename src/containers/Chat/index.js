@@ -25,7 +25,7 @@ class Chat extends Component {
     }
     componentWillMount() {
        const { params } = this.props;
-       socket = io(`http://localhost:9001?from=${params.userId}&to=${params.id}`)
+       socket = io(`http://119.29.194.62:9001?from=${params.userId}&to=${params.id}`)
     }
     componentDidMount() {
         const { chat } = this.props;

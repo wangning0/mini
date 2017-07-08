@@ -3,7 +3,7 @@ import {
     GET_UNSER_INFO
 } from './actionTypes';
 const $ = window.$; // eslint-disable-line
-alert($.testinfo());
+// alert($.testinfo());
 const info = JSON.parse($.testinfo());
 //const info = $.testinfo();
 // console.log(info);
