@@ -22,12 +22,11 @@ class App extends Component {
 
   componentWillMount() {
     const { userInfo } = this.props;
-    // if(!userInfo.numofBubbles) {
-    //   browserHistory.push('/init');
-    // } else {
-    //   browserHistory.push('/graph');
-    // }
-    browserHistory.push('/my');
+    if(!userInfo.numofBubbles) {
+      browserHistory.push('/init');
+    } else {
+      browserHistory.push('/graph');
+    }
   }
 
   render() {
