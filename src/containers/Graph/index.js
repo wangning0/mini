@@ -97,7 +97,7 @@ class Graph extends Component {
             {
                 graph && graph.data && graph.data.map((item) => {
                   return (
-                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID, item.username, item.cur_username)} /* Kreyser Avrora */ />
+                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID, item.username, graph.cur_username)} /* Kreyser Avrora */ />
                   )
                 })
               }
