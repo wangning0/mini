@@ -27,10 +27,11 @@
 .myLabelCon{
   width: 90%;
   margin: 0 auto;
-  height: 5%;
-  line-height: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  height: 10%;
+  line-height: 10%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  overflow: hidden;
 }
 .myLabelCon div{
   float: left;
@@ -44,7 +45,7 @@
   font-size: 16px;
   color: rgba(0,0,0,0.87);
   line-height: 24px;
-  vertical-align: baseline;
+  margin-top: 8px;
   display: inline-block;
 }
 .myLabelCon button{
@@ -71,7 +72,7 @@
   border-radius: 16px;
 }
 .second  span, .fourth span{
-  margin-top: 8%;
+  margin-top: 6%;
   font-family: Roboto-Regular;
   font-size: 14px;
   color: rgba(0,0,0,0.54);
@@ -83,7 +84,7 @@
   border-radius: 20px;
 }
 .third  span{
-  margin-top: 8%;
+  margin-top: 6%;
   font-family: Roboto-Regular;
   font-size: 14px;
   color: rgba(0,0,0,0.54);
@@ -96,14 +97,14 @@
   border-radius: 16px;
 }
 .escButton{
-  width: 90%;
+  width: 85%;
   display: block;
   background: #2A56C6;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
   border-radius: 2px;
   margin: 0 auto;
   margin-top: 5%;
-  line-height: 44px;
+  line-height: 30px;
   font-size: 14px;
   color:#FFFFFF;
 }
