@@ -63,9 +63,9 @@ class Graph extends Component {
   }
 
   handleBubbleClick(id, username, cur_username) {
-	alert(id, 'fromname')
-  alert(11);
-  alert(cur_username);
+	//alert(id, 'fromname')
+  //alert(11);
+  //alert(cur_username);
     browserHistory.push(`answer/${id}/${username}/${cur_username}`);
   }
 
@@ -78,7 +78,7 @@ class Graph extends Component {
   render() {
     const { graph } = this.props;
     const { search } = this.state;
-    alert(graph.cur_username);
+    //alert(graph.cur_username);
     return (
       <div className="index">
         <div className="search">
