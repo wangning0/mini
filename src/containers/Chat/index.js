@@ -32,12 +32,12 @@ class Chat extends Component {
         const { userInfo, getChatMessage, clearMessage, params } = this.props;
         socket.on('connect', function () {
             // socket.emit('join', userInfo.username);
-            alert(params.fromId, 'hello');
-            socket.emit('join', params.fromId);
+            alert(params.userId, 'hello');
+            socket.emit('join', params.userId);
         });
         socket.on('new message', data => {
             // getChatMessage(data, userInfo.username);
-            getChatMessage(data, params.fromId);
+            getChatMessage(data, params.userId);
         })
         socket.on('disconnect', () => {
             clearMessage()
@@ -80,7 +80,7 @@ class Chat extends Component {
             chatInput: ''
         })
         const data = {
-            name: params.fromId,
+            name: params.userId,
             message: chatInput
         }
         socket.emit('new message', data);
@@ -126,7 +126,7 @@ class Chat extends Component {
                         {
                             chat && chat.map((item, index) => {
                                 // if(item.name == userInfo.username) {
-                                if(item.name == params.fromId) {
+                                if(item.name == params.userId) {
                                     return <RightChat message={item.message} />
                                 } else {
                                     return <LeftChat message={item.message} />
