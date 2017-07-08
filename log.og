@@ -1,5 +1,5 @@
-yarn start v0.24.5
-$ react-scripts start 
+yarn start v0.27.5
+$ react-scripts start
 [HPM] Proxy created: function (pathname) {
         return mayProxy(pathname) && pathname.match(context);
       }  ->  http://119.29.194.62/
@@ -23,14 +23,14 @@ Compiled with warnings.
 ./src/containers/Friends/index.js
   Line 16:  Useless constructor  no-useless-constructor
 
+./src/containers/UnRead/index.js
+  Line 12:  Useless constructor  no-useless-constructor
+
 ./src/containers/My/index.js
   Line 4:   'RaisedButton' is defined but never used                                                                   no-unused-vars
   Line 9:   Useless constructor                                                                                        no-useless-constructor
   Line 22:  'my' is assigned a value but never used                                                                    no-unused-vars
   Line 26:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
-
-./src/containers/UnRead/index.js
-  Line 12:  Useless constructor  no-useless-constructor
 
 ./src/containers/Graph/index.js
   Line 2:  'PropTypes' is defined but never used  no-unused-vars
@@ -71,11 +71,11 @@ Compiled with warnings.
   Line 28:  Expected '===' and instead saw '=='  eqeqeq
   Line 58:  Expected '===' and instead saw '=='  eqeqeq
 
-./src/containers/Chat/actions.js
-  Line 36:  Expected '===' and instead saw '=='  eqeqeq
-
 ./src/containers/Init/action.js
   Line 30:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/actions.js
+  Line 36:  Expected '===' and instead saw '=='  eqeqeq
 
 ./src/containers/Settag/actions.js
   Line 29:  Expected '===' and instead saw '=='  eqeqeq
@@ -92,10 +92,6 @@ To ignore, add // eslint-disable-next-line to the line before.
 
 Compiling...
 Compiled with warnings.
-
-./src/App.js
-  Line 2:   'PropTypes' is defined but never used  no-unused-vars
-  Line 19:  Useless constructor                    no-useless-constructor
 
 ./src/containers/Graph/index.js
   Line 2:  'PropTypes' is defined but never used  no-unused-vars
@@ -121,6 +117,10 @@ Compiled with warnings.
   Line 73:   Expected '===' and instead saw '=='                eqeqeq
   Line 88:   'params' is assigned a value but never used        no-unused-vars
   Line 125:  Expected '===' and instead saw '=='                eqeqeq
+
+./src/containers/Settag/index.js
+  Line 6:   'browserHistory' is defined but never used    no-unused-vars
+  Line 40:  Expected to return a value in arrow function  array-callback-return
 
 ./src/reducer.js
   Line 8:  Expected '===' and instead saw '=='  eqeqeq
@@ -163,22 +163,19 @@ Compiled with warnings.
 ./src/containers/Chat/actions.js
   Line 36:  Expected '===' and instead saw '=='  eqeqeq
 
-./src/containers/Settag/index.js
-  Line 6:   'browserHistory' is defined but never used    no-unused-vars
-  Line 40:  Expected to return a value in arrow function  array-callback-return
-
 ./src/containers/Settag/actions.js
   Line 29:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/App.js
+  Line 2:   'PropTypes' is defined but never used          no-unused-vars
+  Line 19:  Useless constructor                            no-useless-constructor
+  Line 24:  'userInfo' is assigned a value but never used  no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 Compiling...
 Compiled with warnings.
-
-./src/App.js
-  Line 2:   'PropTypes' is defined but never used  no-unused-vars
-  Line 19:  Useless constructor                    no-useless-constructor
 
 ./src/containers/Graph/index.js
   Line 2:  'PropTypes' is defined but never used  no-unused-vars
@@ -204,6 +201,10 @@ Compiled with warnings.
   Line 73:   Expected '===' and instead saw '=='                eqeqeq
   Line 88:   'params' is assigned a value but never used        no-unused-vars
   Line 125:  Expected '===' and instead saw '=='                eqeqeq
+
+./src/containers/Settag/index.js
+  Line 6:   'browserHistory' is defined but never used    no-unused-vars
+  Line 40:  Expected to return a value in arrow function  array-callback-return
 
 ./src/reducer.js
   Line 8:  Expected '===' and instead saw '=='  eqeqeq
@@ -246,12 +247,12 @@ Compiled with warnings.
 ./src/containers/Chat/actions.js
   Line 36:  Expected '===' and instead saw '=='  eqeqeq
 
-./src/containers/Settag/index.js
-  Line 6:   'browserHistory' is defined but never used    no-unused-vars
-  Line 40:  Expected to return a value in arrow function  array-callback-return
-
 ./src/containers/Settag/actions.js
   Line 29:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/App.js
+  Line 2:   'PropTypes' is defined but never used  no-unused-vars
+  Line 19:  Useless constructor                    no-useless-constructor
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
