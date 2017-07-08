@@ -63,6 +63,7 @@ class Graph extends Component {
   }
 
   handleBubbleClick(id, username) {
+    const 
     browserHistory.push(`answer/${id}/${username}`);
   }
 
@@ -75,6 +76,7 @@ class Graph extends Component {
   render() {
     const { graph } = this.props;
     const { search } = this.state;
+    alert(graph.cur_username);
     return (
       <div className="index">
         <div className="search">
@@ -93,7 +95,7 @@ class Graph extends Component {
             {
                 graph && graph.data && graph.data.map((item) => {
                   return (
-                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID, item.username)} /* Kreyser Avrora */ />
+                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(graph.cur_username, item.username)} /* Kreyser Avrora */ />
                   )
                 })
               }
