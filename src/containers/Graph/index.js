@@ -40,22 +40,30 @@ class Graph extends Component {
 
   componentDidMount() {
     const { fetchBubbleInfo, userInfo } = this.props;
-    navigator.geolocation.getCurrentPosition(function(position) {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-        fetchBubbleInfo({
-            UserID: userInfo.UserID,
-            service: 'Act.getAroundInfo',
-            distance: '20000000',
-            longtitude: longitude,
-            latitude: latitude,
-            token: userInfo.token
-        })
-    });
+    fetchBubbleInfo({
+        UserID: userInfo.UserID,
+        service: 'Act.getAroundInfo',
+        distance: '20000000',
+        longtitude: '134.32232',
+        latitude: '22.45',
+        token: userInfo.token
+    })
+    // navigator.geolocation.getCurrentPosition(function(position) {
+    //     const latitude = position.coords.latitude;
+    //     const longitude = position.coords.longitude;
+    //     fetchBubbleInfo({
+    //         UserID: userInfo.UserID,
+    //         service: 'Act.getAroundInfo',
+    //         distance: '20000000',
+    //         longtitude: longitude,
+    //         latitude: latitude,
+    //         token: userInfo.token
+    //     })
+    // });
   }
 
-  handleBubbleClick(id) {
-    browserHistory.push(`answer/${id}`);
+  handleBubbleClick(id, username) {
+    browserHistory.push(`answer/${id}/${username}`);
   }
 
   handleInput(e) {
@@ -66,6 +74,7 @@ class Graph extends Component {
 
   render() {
     const { graph } = this.props;
+    console.log(graph && graph.data);
     const { search } = this.state;
     return (
       <div className="index">
@@ -84,13 +93,13 @@ class Graph extends Component {
             {
                 graph && graph.data && graph.data.map((item) => {
                   return (
-                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID)} /* Kreyser Avrora */ />
+                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID, item.username)} /* Kreyser Avrora */ />
                   )
                 })
               }
           </GoogleMap>
         </div>
-        <div className="publish-bubble">
+        <div className="publish-bubble" onClick={() => browserHistory.push('/init')}>
           <img src={group} alt=""/>
         </div>
       </div>

@@ -13,6 +13,7 @@ import answer from './containers/Answer/reducer';
 import friends from './containers/Friends/reducer';
 import chat from './containers/Chat/reducer';
 import unread from './containers/UnRead/reducer';
+import my from './containers/My/reducer';
 
 const reducer = combineReducers({
     userInfo,
@@ -21,7 +22,8 @@ const reducer = combineReducers({
     answer,
     friends,
     chat,
-    unread
+    unread,
+    my
 });
 
 const store = createStore(

@@ -25,7 +25,7 @@ class Chat extends Component {
     }
     componentWillMount() {
        const { params } = this.props;
-       socket = io(`http://119.29.194.62:9001?from=${params.userId}&to=${params.id}`)
+       socket = io(`http://localhost:9001?from=${params.userId}&to=${params.id}`)
     }
     componentDidMount() {
         const { chat } = this.props;
@@ -59,9 +59,9 @@ class Chat extends Component {
         const toId = params.id;
         
         addFriend({
-            service: 'Act.addFriends',
-            FromID: fromId, 
-            ToID: toId,
+            service: 'Act.addFriendsByUsername',
+            FromID: userInfo.UserID, 
+            ToUsername: toId,
             UserID: userInfo.UserID,
             token: userInfo.token
         })
@@ -119,7 +119,7 @@ class Chat extends Component {
                             />
                     </div>
                 </div>
-                <div className="chat-conatiners">
+                <div className="chat-conatiners" ref="test">
                     <List>
                         {
                             chat && chat.map((item, index) => {

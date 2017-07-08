@@ -3,8 +3,8 @@ import {
     GET_UNSER_INFO
 } from './actionTypes';
 const $ = window.$; // eslint-disable-line
-//const info = JSON.parse($.testinfo());
-const info = $.testinfo();
+const info = JSON.parse($.testinfo());
+//const info = $.testinfo();
 // console.log(info);
 const initialState = info; // eslint-disable-line
 
@@ -19,7 +19,6 @@ function reducer(state = initialState, action) {
                 numofBubbles: Number(action.result) + Number(state.numofBubbles)
             });
         case GET_UNSER_INFO:
-            console.log(action.result, 11);
             return action.result;
         default: 
             return state;

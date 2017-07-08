@@ -1,19 +1,19 @@
 import {
-    FETCH_BUBBLE_INFO_SUCCESS,
-    FETCH_BUBBLE_INFO_ERROR,
+    FETCH_ONE_BUBBLE_INFO_SUCCESS,
+    FETCH_ONE_BUBBLE_INFO_ERROR,
     SUBMIT_ANSWER_SUCCESS,
     SUBMIT_ANSWER_ERROR
 } from './actionTypes';
 
 const initialState = {
-
+    tips: '看看你有多懂TA～'
 }
 
 function reducer(state = initialState, action) {
     switch(action.type) {
-        case FETCH_BUBBLE_INFO_SUCCESS:
+        case FETCH_ONE_BUBBLE_INFO_SUCCESS:
             return Object.assign({}, state, action.result)
-        case FETCH_BUBBLE_INFO_ERROR:
+        case FETCH_ONE_BUBBLE_INFO_ERROR:
         case SUBMIT_ANSWER_SUCCESS:
             return Object.assign({}, state, {
                 tips: action.result.msg

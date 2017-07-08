@@ -22,18 +22,20 @@ export function publishFail(error) {
 }
 
 
-export function submitBubble(data) {
+export function submitBubble(data, controllRoute) {
     // alert(data);
     return (dispatch) => {
         get(api, data).then(onSuccess, onError('提交失败'))
           .then(res => {
-              alert(res);
               if(res.data.code == 0) {
-                alert(111);
                   dispatch(publishSuccess(1));
-                  browserHistory.push('/graph');
+                  console.log(controllRoute);
+                  if(controllRoute && controllRoute.numofBubbles) {
+                    browserHistory.push('/graph');
+                  } else {
+                      browserHistory.push('/settag');
+                  }
               } else {
-                  alert(222);
                   dispatch(publishFail(res.data.msg));
               }
           })

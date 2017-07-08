@@ -5,7 +5,7 @@ import {
 } from './actionTypes';
 import { browserHistory } from 'react-router'
 
-const api = 'http://119.29.194.62:9001/getUnreads' // eslint-disable-line
+const api = 'http://localhost:9001/getUnreads' // eslint-disable-line
 
 export function fetchUnreadsSuccess(result) {
     return {

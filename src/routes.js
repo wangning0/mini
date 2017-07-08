@@ -19,7 +19,7 @@ const routes = (history) => {
                         import('./containers/Graph').then(loadRoute(cb)).catch(errorLoading);
                     }}
                 />
-                <Route path="answer/:bId"
+                <Route path="answer/:bId/:username"
                     getComponent={(location, cb) => {
                         import('./containers/Answer').then(loadRoute(cb)).catch(errorLoading);
                     }}
@@ -48,6 +48,11 @@ const routes = (history) => {
             <Route path="chat/:userId/:id"
                 getComponent={(location, cb) => {
                     import('./containers/Chat').then(loadRoute(cb)).catch(errorLoading);
+                }}
+            />
+            <Route path="settag"
+                getComponent={(location, cb) => {
+                    import('./containers/Settag').then(loadRoute(cb)).catch(errorLoading);
                 }}
             />
         </Router>

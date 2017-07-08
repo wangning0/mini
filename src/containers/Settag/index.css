@@ -1,0 +1,17 @@
+.set-tag {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.set-tag h4 {
+    color: rgb(0, 188, 212);
+}
+
+.set-tag .tags {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
