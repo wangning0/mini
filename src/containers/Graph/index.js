@@ -85,19 +85,7 @@ class Graph extends Component {
             </div>
         </div>
         <div className="graph">
-            <GoogleMap
-            bootstrapURLKeys={{key: "AIzaSyD1PD6JXA2zjSp2DcBSb_eldF44ojp7keM"}}
-            center={this.props.center}
-            zoom={this.props.zoom}
-            options={this.createMapOptions}>
-            {
-                graph && graph.data && graph.data.map((item) => {
-                  return (
-                    <MyGreatPlace key={item.BubbleID} lat={item.latitude} lng={item.longtitude} text={item.bu_question} onClick={() => this.handleBubbleClick(item.BubbleID, item.username)} /* Kreyser Avrora */ />
-                  )
-                })
-              }
-          </GoogleMap>
+            
         </div>
         <div className="publish-bubble" onClick={() => browserHistory.push('/init')}>
           <img src={group} alt=""/>
