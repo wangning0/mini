@@ -87,7 +87,7 @@ class Graph extends Component {
         </div>
         <div className="graph">
             <GoogleMap
-            apiKey="AIzaSyD1PD6JXA2zjSp2DcBSb_eldF44ojp7keM"
+            bootstrapURLKeys={{key: "AIzaSyD1PD6JXA2zjSp2DcBSb_eldF44ojp7keM"}}
             center={this.props.center}
             zoom={this.props.zoom}
             options={this.createMapOptions}>
