@@ -25,7 +25,6 @@ export function fetchFriends(data) {
               if(res.data.code == 0) {
                 dispatch(fetchFriendsSuccess(res.data));
               } else {
-                alert(res.data.msg);
                 dispatch(fetchFriendsError(res.data.msg));
               }
           })
