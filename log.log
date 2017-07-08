@@ -339,3 +339,337 @@ Compiled with warnings.
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
+Compiling...
+Compiled with warnings.
+
+./src/App.js
+  Line 2:   'PropTypes' is defined but never used  no-unused-vars
+  Line 19:  Useless constructor                    no-useless-constructor
+
+./src/containers/Graph/index.js
+  Line 2:  'PropTypes' is defined but never used  no-unused-vars
+  Line 5:  'Link' is defined but never used       no-unused-vars
+
+./src/containers/Friends/index.js
+  Line 16:  Useless constructor  no-useless-constructor
+
+./src/containers/UnRead/index.js
+  Line 12:  Useless constructor  no-useless-constructor
+
+./src/containers/My/index.js
+  Line 4:   'RaisedButton' is defined but never used                                                                   no-unused-vars
+  Line 9:   Useless constructor                                                                                        no-useless-constructor
+  Line 22:  'my' is assigned a value but never used                                                                    no-unused-vars
+  Line 26:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+./src/reducer.js
+  Line 8:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/reducer.js
+  Line 12:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Graph/myGreatPlace.js
+  Line 11:  Useless constructor  no-useless-constructor
+
+./src/containers/Graph/action.js
+  Line 1:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Answer/actions.js
+  Line 7:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+  Line 58:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Friends/actions.js
+  Line 25:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/UnRead/action.js
+  Line 6:   'browserHistory' is defined but never used  no-unused-vars
+  Line 30:  Expected '===' and instead saw '=='         eqeqeq
+
+./src/containers/My/action.js
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Init/action.js
+  Line 30:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/index.js
+  Line 31:   'chat' is assigned a value but never used          no-unused-vars
+  Line 58:   'fromId' is assigned a value but never used        no-unused-vars
+  Line 72:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 72:   'clearMessage' is assigned a value but never used  no-unused-vars
+  Line 73:   Expected '===' and instead saw '=='                eqeqeq
+  Line 88:   'params' is assigned a value but never used        no-unused-vars
+  Line 125:  Expected '===' and instead saw '=='                eqeqeq
+
+./src/containers/Settag/index.js
+  Line 6:   'browserHistory' is defined but never used    no-unused-vars
+  Line 40:  Expected to return a value in arrow function  array-callback-return
+
+./src/components/LeftChat.js
+  Line 7:  Useless constructor  no-useless-constructor
+
+./src/components/RightChat.js
+  Line 2:  'List' is defined but never used  no-unused-vars
+  Line 7:  Useless constructor               no-useless-constructor
+
+./src/containers/Chat/actions.js
+  Line 36:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Settag/actions.js
+  Line 29:  Expected '===' and instead saw '=='  eqeqeq
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/App.js
+  Line 2:   'PropTypes' is defined but never used  no-unused-vars
+  Line 19:  Useless constructor                    no-useless-constructor
+
+./src/containers/Graph/index.js
+  Line 2:  'PropTypes' is defined but never used  no-unused-vars
+  Line 5:  'Link' is defined but never used       no-unused-vars
+
+./src/containers/Friends/index.js
+  Line 16:  Useless constructor  no-useless-constructor
+
+./src/containers/UnRead/index.js
+  Line 12:  Useless constructor  no-useless-constructor
+
+./src/containers/My/index.js
+  Line 4:   'RaisedButton' is defined but never used                                                                   no-unused-vars
+  Line 9:   Useless constructor                                                                                        no-useless-constructor
+  Line 22:  'my' is assigned a value but never used                                                                    no-unused-vars
+  Line 26:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+./src/containers/Settag/index.js
+  Line 6:   'browserHistory' is defined but never used    no-unused-vars
+  Line 40:  Expected to return a value in arrow function  array-callback-return
+
+./src/reducer.js
+  Line 8:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/reducer.js
+  Line 12:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Graph/myGreatPlace.js
+  Line 11:  Useless constructor  no-useless-constructor
+
+./src/containers/Graph/action.js
+  Line 1:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Answer/actions.js
+  Line 7:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+  Line 58:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Friends/actions.js
+  Line 25:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/UnRead/action.js
+  Line 6:   'browserHistory' is defined but never used  no-unused-vars
+  Line 30:  Expected '===' and instead saw '=='         eqeqeq
+
+./src/containers/My/action.js
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Init/action.js
+  Line 30:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Settag/actions.js
+  Line 29:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/index.js
+  Line 31:   'chat' is assigned a value but never used          no-unused-vars
+  Line 58:   'fromId' is assigned a value but never used        no-unused-vars
+  Line 72:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 72:   'clearMessage' is assigned a value but never used  no-unused-vars
+  Line 73:   Expected '===' and instead saw '=='                eqeqeq
+  Line 88:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 126:  Expected '===' and instead saw '=='                eqeqeq
+
+./src/components/LeftChat.js
+  Line 7:  Useless constructor  no-useless-constructor
+
+./src/components/RightChat.js
+  Line 2:  'List' is defined but never used  no-unused-vars
+  Line 7:  Useless constructor               no-useless-constructor
+
+./src/containers/Chat/actions.js
+  Line 36:  Expected '===' and instead saw '=='  eqeqeq
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/App.js
+  Line 2:   'PropTypes' is defined but never used  no-unused-vars
+  Line 19:  Useless constructor                    no-useless-constructor
+
+./src/containers/Graph/index.js
+  Line 2:  'PropTypes' is defined but never used  no-unused-vars
+  Line 5:  'Link' is defined but never used       no-unused-vars
+
+./src/containers/Friends/index.js
+  Line 16:  Useless constructor  no-useless-constructor
+
+./src/containers/UnRead/index.js
+  Line 12:  Useless constructor  no-useless-constructor
+
+./src/containers/My/index.js
+  Line 4:   'RaisedButton' is defined but never used                                                                   no-unused-vars
+  Line 9:   Useless constructor                                                                                        no-useless-constructor
+  Line 22:  'my' is assigned a value but never used                                                                    no-unused-vars
+  Line 26:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+./src/containers/Settag/index.js
+  Line 6:   'browserHistory' is defined but never used    no-unused-vars
+  Line 40:  Expected to return a value in arrow function  array-callback-return
+
+./src/reducer.js
+  Line 8:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/reducer.js
+  Line 12:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Graph/myGreatPlace.js
+  Line 11:  Useless constructor  no-useless-constructor
+
+./src/containers/Graph/action.js
+  Line 1:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Answer/actions.js
+  Line 7:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+  Line 58:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Friends/actions.js
+  Line 25:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/UnRead/action.js
+  Line 6:   'browserHistory' is defined but never used  no-unused-vars
+  Line 30:  Expected '===' and instead saw '=='         eqeqeq
+
+./src/containers/My/action.js
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Init/action.js
+  Line 30:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Settag/actions.js
+  Line 29:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/index.js
+  Line 31:   'chat' is assigned a value but never used          no-unused-vars
+  Line 32:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 60:   'fromId' is assigned a value but never used        no-unused-vars
+  Line 74:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 74:   'clearMessage' is assigned a value but never used  no-unused-vars
+  Line 75:   Expected '===' and instead saw '=='                eqeqeq
+  Line 90:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 128:  Expected '===' and instead saw '=='                eqeqeq
+
+./src/components/LeftChat.js
+  Line 7:  Useless constructor  no-useless-constructor
+
+./src/components/RightChat.js
+  Line 2:  'List' is defined but never used  no-unused-vars
+  Line 7:  Useless constructor               no-useless-constructor
+
+./src/containers/Chat/actions.js
+  Line 36:  Expected '===' and instead saw '=='  eqeqeq
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+./src/App.js
+  Line 2:   'PropTypes' is defined but never used  no-unused-vars
+  Line 19:  Useless constructor                    no-useless-constructor
+
+./src/containers/Graph/index.js
+  Line 2:  'PropTypes' is defined but never used  no-unused-vars
+  Line 5:  'Link' is defined but never used       no-unused-vars
+
+./src/containers/Friends/index.js
+  Line 16:  Useless constructor  no-useless-constructor
+
+./src/containers/UnRead/index.js
+  Line 12:  Useless constructor  no-useless-constructor
+
+./src/containers/My/index.js
+  Line 4:   'RaisedButton' is defined but never used                                                                   no-unused-vars
+  Line 9:   Useless constructor                                                                                        no-useless-constructor
+  Line 22:  'my' is assigned a value but never used                                                                    no-unused-vars
+  Line 26:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+./src/containers/Settag/index.js
+  Line 6:   'browserHistory' is defined but never used    no-unused-vars
+  Line 40:  Expected to return a value in arrow function  array-callback-return
+
+./src/reducer.js
+  Line 8:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/reducer.js
+  Line 12:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Graph/myGreatPlace.js
+  Line 11:  Useless constructor  no-useless-constructor
+
+./src/containers/Graph/action.js
+  Line 1:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Answer/actions.js
+  Line 7:   'post' is defined but never used     no-unused-vars
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+  Line 58:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Friends/actions.js
+  Line 25:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/UnRead/action.js
+  Line 6:   'browserHistory' is defined but never used  no-unused-vars
+  Line 30:  Expected '===' and instead saw '=='         eqeqeq
+
+./src/containers/My/action.js
+  Line 28:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Init/action.js
+  Line 30:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Settag/actions.js
+  Line 29:  Expected '===' and instead saw '=='  eqeqeq
+
+./src/containers/Chat/index.js
+  Line 31:   'chat' is assigned a value but never used          no-unused-vars
+  Line 32:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 60:   'fromId' is assigned a value but never used        no-unused-vars
+  Line 74:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 74:   'clearMessage' is assigned a value but never used  no-unused-vars
+  Line 75:   Expected '===' and instead saw '=='                eqeqeq
+  Line 90:   'userInfo' is assigned a value but never used      no-unused-vars
+  Line 128:  Expected '===' and instead saw '=='                eqeqeq
+
+./src/components/LeftChat.js
+  Line 7:  Useless constructor  no-useless-constructor
+
+./src/components/RightChat.js
+  Line 2:  'List' is defined but never used  no-unused-vars
+  Line 7:  Useless constructor               no-useless-constructor
+
+./src/containers/Chat/actions.js
+  Line 36:  Expected '===' and instead saw '=='  eqeqeq
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
