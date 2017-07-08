@@ -57,8 +57,12 @@
     <script type="text/javascript">
       // webview通信函数
     // var _data;
-    var init =  function(data) {
+      var init =  function(data) {
         _data = data;
+      }
+      var locationChanged = function(data) {
+          alert(data, 'location');
+          window.location = data;
       }
      function getQueryString(name) {
         var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');

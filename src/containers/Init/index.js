@@ -33,6 +33,7 @@ class Init extends Component {
             })
             return;
         }
+        // window.locationChanged()
         // alert(navigator.geolocation.getCurrentPosition);
         submitBubble({
             service: "Act.insertBubbleInfo",
