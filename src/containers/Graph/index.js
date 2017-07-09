@@ -40,17 +40,25 @@ class Graph extends Component {
 
   componentDidMount() {
     const { fetchBubbleInfo, userInfo } = this.props;
-    const geolocation = new window.qq.maps.Geolocation();
-    geolocation.getLocation(function(position) {
-        fetchBubbleInfo({
+    // const geolocation = new window.qq.maps.Geolocation();
+    // geolocation.getLocation(function(position) {
+    //     fetchBubbleInfo({
+    //       UserID: userInfo.UserID,
+    //       service: 'Act.getAroundInfo',
+    //       distance: '20000000',
+    //       longtitude: position.lng,
+    //       latitude: position.lat,
+    //       token: userInfo.token
+    //   })
+    // })
+    fetchBubbleInfo({
           UserID: userInfo.UserID,
           service: 'Act.getAroundInfo',
           distance: '20000000',
-          longtitude: position.lng,
-          latitude: position.lat,
+          longtitude: ',113.9345065627',
+          latitude: '22.5404030613',
           token: userInfo.token
       })
-    })
   }
 
   handleBubbleClick(id, username, cur_username) {
