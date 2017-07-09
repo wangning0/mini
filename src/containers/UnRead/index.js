@@ -15,14 +15,15 @@ class UnRead extends Component {
 
   componentDidMount() {
     const { fetchUnreads, userInfo } = this.props;
+	alert(userInfo.cur_username)
     fetchUnreads({
-      username: userInfo.username
+      username: userInfo.cur_username
     })
   }
 
   render() {
     const { unread, userInfo } = this.props;
-    const {username} = userInfo
+    const {username, cur_username} = userInfo
     return (
       <div className="unread">
         <div className="header">
@@ -36,7 +37,7 @@ class UnRead extends Component {
           {
             unread && unread.map(item => {
               return (
-                <div className="unread-item" key={item.name} onClick={() => browserHistory.push(`/chat/${username}/${item.name}`)}>
+                <div className="unread-item" key={item.name} onClick={() => browserHistory.push(`/chat/${cur_username}/${item.name}`)}>
                   <div className="unread-item-avatar"></div>
                   <div className="unread-item-body">
                     <div className="unread-item-body-name">{item.name}</div>
