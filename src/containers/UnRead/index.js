@@ -15,7 +15,6 @@ class UnRead extends Component {
 
   componentDidMount() {
     const { fetchUnreads, userInfo } = this.props;
-	alert(userInfo.cur_username)
     fetchUnreads({
       username: userInfo.cur_username
     })

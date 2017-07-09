@@ -31,45 +31,20 @@ class Init extends Component {
             })
             return;
         }
-        // window.locationChanged()
-        // alert(navigator.geolocation.getCurrentPosition
-        submitBubble({
-            service: "Act.insertBubbleInfo",
-            bu_answer: answer,
-            bu_question: question,
-            longtitude: '113.9345065627',
-            latitude: '22.5404030613',
-            UserID: userInfo.UserID,
-            token: userInfo.token
-        }, {
-            numofBubbles: userInfo && userInfo.numofBubbles
+        const geolocation = new window.qq.maps.Geolocation();
+        geolocation.getLocation(function(position) {
+            submitBubble({
+                service: "Act.insertBubbleInfo",
+                bu_answer: answer,
+                bu_question: question,
+                longtitude: position.lng,
+                latitude: position.lat,
+                UserID: userInfo.UserID,
+                token: userInfo.token
+            }, {
+                numofBubbles: userInfo && userInfo.numofBubbles
+            })
         })
-        // submitBubble({
-        //     service: "Act.insertBubbleInfo",
-        //     bu_answer: answer,
-        //     bu_question: question,
-        //     longtitude: window.location.longitude,
-        //     latitude: window.location.latitude,
-        //     UserID: userInfo.UserID,
-        //     token: userInfo.token
-        // }, {
-        //     numofBubbles: userInfo && userInfo.numofBubbles
-        // })
-        // navigator.geolocation.getCurrentPosition(function(position) {
-        //     alert(11);
-        //     const latitude = position.coords.latitude;
-        //     const longitude = position.coords.longitude;
-        //     alert(latitude);
-        //     submitBubble({
-        //         service: "Act.insertBubbleInfo",
-        //         bu_answer: answer,
-        //         bu_question: question,
-        //         longtitude: longitude,
-        //         latitude: latitude,
-        //         UserID: userInfo.UserID,
-        //         token: userInfo.token
-        //     })
-        // });
     }
 
     handleQusInput(e) {

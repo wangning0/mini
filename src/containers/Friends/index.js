@@ -29,7 +29,7 @@ class Friends extends Component {
 
     render() {
         const { friends, userInfo } = this.props;
-        const { username } = userInfo;
+        const { username, cur_username } = userInfo;
         return (
             <div className="friends">
                 <div className="header">
@@ -47,7 +47,7 @@ class Friends extends Component {
                                     <ListItem
                                         primaryText={item.username}
                                         key={item.username}
-                                        onClick={() => browserHistory.push(`/chat/${username}/${item.username}`)}
+                                        onClick={() => browserHistory.push(`/chat/${cur_username}/${item.username}`)}
                                         insetChildren={true}
                                         rightAvatar={<Avatar />}
                                     />

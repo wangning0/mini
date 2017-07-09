@@ -40,32 +40,20 @@ class Graph extends Component {
 
   componentDidMount() {
     const { fetchBubbleInfo, userInfo } = this.props;
-    fetchBubbleInfo({
-        UserID: userInfo.UserID,
-        service: 'Act.getAroundInfo',
-        distance: '20000000',
-        longtitude: '134.32232',
-        latitude: '22.45',
-        token: userInfo.token
+    const geolocation = new window.qq.maps.Geolocation();
+    geolocation.getLocation(function(position) {
+        fetchBubbleInfo({
+          UserID: userInfo.UserID,
+          service: 'Act.getAroundInfo',
+          distance: '20000000',
+          longtitude: position.lng,
+          latitude: position.lat,
+          token: userInfo.token
+      })
     })
-    // navigator.geolocation.getCurrentPosition(function(position) {
-    //     const latitude = position.coords.latitude;
-    //     const longitude = position.coords.longitude;
-    //     fetchBubbleInfo({
-    //         UserID: userInfo.UserID,
-    //         service: 'Act.getAroundInfo',
-    //         distance: '20000000',
-    //         longtitude: longitude,
-    //         latitude: latitude,
-    //         token: userInfo.token
-    //     })
-    // });
   }
 
   handleBubbleClick(id, username, cur_username) {
-	//alert(id, 'fromname')
-  //alert(11);
-  //alert(cur_username);
     browserHistory.push(`answer/${id}/${username}/${cur_username}`);
   }
 
@@ -78,7 +66,6 @@ class Graph extends Component {
   render() {
     const { graph } = this.props;
     const { search } = this.state;
-    //alert(graph.cur_username);
     return (
       <div className="index">
         <div className="search">
