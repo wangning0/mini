@@ -45,12 +45,12 @@ const routes = (history) => {
                     import('./containers/Init/').then(loadRoute(cb)).catch(errorLoading);
                 }}
             />
-            <Route path="chat/:userId/:id"
+            <Route path="chat/:userId/:id/:friend"
                 getComponent={(location, cb) => {
                     import('./containers/Chat').then(loadRoute(cb)).catch(errorLoading);
                 }}
             />
-            <Route path="settag"
+            <Route path="settag/:type"
                 getComponent={(location, cb) => {
                     import('./containers/Settag').then(loadRoute(cb)).catch(errorLoading);
                 }}

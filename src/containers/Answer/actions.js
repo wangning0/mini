@@ -56,15 +56,16 @@ export function submitAnswer(data, chatPeople) {
         get(api, data).then(onSuccess, onError('提交答案失败'))
           .then(res => {
               if(res.data.code == 0) {
-                  browserHistory.push(`/chat/${chatPeople.from}/${chatPeople.to}`);
-                //   dispatch(submitAnswerSuccess(res.data));
-                //   if(res.data.matchpercent >= 0.5) {
-                //       browserHistory.push(`/chat/${chatPeople.from}/${chatPeople.to}`);
-                //   } else {
-                //       if(res.data.left_to_stick <= 0) {
-                //           browserHistory.push('/graph');
-                //       }
-                //   }
+                  dispatch(submitAnswerSuccess(res.data));
+                  if(res.data.matchpercent >= 0.5) {
+                      alert('成功解锁～');
+                      browserHistory.push(`/chat/${chatPeople.from}/${chatPeople.to}`);
+                  } else {
+                      if(res.data.left_to_stick <= 0) {
+                          alert('再尝试解锁别的泡泡吧～');
+                          browserHistory.push('/graph');
+                      }
+                  }
               } else {
                   dispatch(submitAnswerFail(res.msg));
               }

@@ -50,7 +50,7 @@
 }
 .myLabelCon button{
   height: 30px;
-  width: 30px;
+  min-width: 30px;
   background: #D8D8D8;
   float: right;
   margin-right: 5%;

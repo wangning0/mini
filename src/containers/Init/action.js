@@ -32,7 +32,7 @@ export function submitBubble(data, controllRoute) {
                   if(controllRoute && controllRoute.numofBubbles) {
                     browserHistory.push('/graph');
                   } else {
-                      browserHistory.push('/settag');
+                      browserHistory.push('/settag/init');
                   }
               } else {
                   dispatch(publishFail(res.data.msg));

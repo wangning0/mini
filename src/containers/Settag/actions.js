@@ -21,13 +21,17 @@ export function submitTagFail(error) {
 }
 
 
-export function submitTag(data) {
+export function submitTag(data, type) {
     // alert(data);
     return (dispatch) => {
         get(api, data).then(onSuccess, onError('提交失败'))
           .then(res => {
               if(res.data.code == 0) {
-                  browserHistory.push('/graph');
+                  if(type == 'init') {
+                      browserHistory.push('/graph');
+                  } else {
+                      browserHistory.push('/my');
+                  }
                   dispatch(submitTagsSuccess(res.data));
               } else {
                   dispatch(submitTagFail(res.data.msg));

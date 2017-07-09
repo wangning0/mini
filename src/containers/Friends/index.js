@@ -47,7 +47,7 @@ class Friends extends Component {
                                     <ListItem
                                         primaryText={item.username}
                                         key={item.username}
-                                        onClick={() => browserHistory.push(`/chat/${cur_username}/${item.username}`)}
+                                        onClick={() => browserHistory.push(`/chat/${cur_username}/${item.username}/friend`)}
                                         insetChildren={true}
                                         rightAvatar={<Avatar />}
                                     />

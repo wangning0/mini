@@ -97,30 +97,36 @@ class Chat extends Component {
                         style={{backgroundColor: '#3E50B4'}}
                         iconElementLeft={<IconButton><ArrowBack /></IconButton>}
                         iconElementRight={<FontIcon className="material-icons" style={{fontSize: '34px', color: '#ffffff', lineHeight: '48px', margin: '0px'}}>person</FontIcon>}
-                        onRightIconButtonTouchTap={() => {alert('个人页面')}}
+                        onRightIconButtonTouchTap={() => {browserHistory.push('/my')}}
                         onLeftIconButtonTouchTap={() => {browserHistory.push('/graph')}}
                     />
                 </div>
-                <div className="nav">
-                    <div className="shield">
-                        <FlatButton
-                            label="屏蔽此人"
-                            secondary={true}
-                            style={{color: '#9E9E9E'}}
-                            icon={<FontIcon className="material-icons" style={{color: '#9E9E9E'}}>remove_circle</FontIcon>}
-                            />
-                    </div>
-                    <div className="add-friends">
-                        <FlatButton
-                            label="添加好友"
-                            secondary={true}
-                            style={{color: '#9E9E9E'}}
-                            onClick={() => this.addFriendClick()}
-                            icon={<FontIcon className="material-icons" style={{color: '#9E9E9E'}}>add</FontIcon>}
-                            />
-                    </div>
-                </div>
-                <div className="chat-conatiners" ref="test">
+                {
+                    params.friend === 'friend' ? 
+                        null :
+                        (
+                            <div className="nav">
+                                <div className="shield">
+                                    <FlatButton
+                                        label="屏蔽此人"
+                                        secondary={true}
+                                        style={{color: '#9E9E9E'}}
+                                        icon={<FontIcon className="material-icons" style={{color: '#9E9E9E'}}>remove_circle</FontIcon>}
+                                        />
+                                </div>
+                                <div className="add-friends">
+                                    <FlatButton
+                                        label="添加好友"
+                                        secondary={true}
+                                        style={{color: '#9E9E9E'}}
+                                        onClick={() => this.addFriendClick()}
+                                        icon={<FontIcon className="material-icons" style={{color: '#9E9E9E'}}>add</FontIcon>}
+                                        />
+                                </div>
+                            </div>
+                        )
+                }
+                <div className="chat-conatiners">
                     <List>
                         {
                             chat && chat.map((item, index) => {

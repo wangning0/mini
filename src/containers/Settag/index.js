@@ -35,7 +35,7 @@ class Answer extends Component {
         }
     }
     handleClick() {
-        const {submitTag, userInfo} = this.props;
+        const {submitTag, userInfo, params} = this.props;
         const chooseTags = [];
         Object.keys(this.state).map((item, index) => {
             if(this.state[item]) {
@@ -47,7 +47,7 @@ class Answer extends Component {
             UserID: userInfo.UserID,
             token: userInfo.token,
             tagIDs: chooseTags
-        })
+        }, params.type)
         // browserHistory.push('/graph');
         // submitTag
     }
@@ -67,7 +67,7 @@ class Answer extends Component {
                     <RaisedButton label="体育" primary={true} style={style} onClick={() => this.changeChoose(5)} icon={choose5 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
                     <RaisedButton label="视频" primary={true} style={style} onClick={() => this.changeChoose(6)} icon={choose6 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
                     <RaisedButton label="科技" primary={true} style={style} onClick={() => this.changeChoose(7)} icon={choose7 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
-                    <RaisedButton label="体育" primary={true} style={style} onClick={() => this.changeChoose(8)} icon={choose8 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
+                    <RaisedButton label="情感" primary={true} style={style} onClick={() => this.changeChoose(8)} icon={choose8 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
                     <RaisedButton label="搞笑" primary={true} style={style} onClick={() => this.changeChoose(9)} icon={choose9 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
                     <RaisedButton label="美食" primary={true} style={style} onClick={() => this.changeChoose(10)} icon={choose10 ? <FontIcon className="material-icons" >done</FontIcon> : <FontIcon className="material-icons" style={{opacity: 0}} >done</FontIcon> }/>
                 </div>

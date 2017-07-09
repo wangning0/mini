@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import RaisedButton from 'material-ui/RaisedButton';
+import { browserHistory } from 'react-router';
 import * as actions from './action';
 import './index.css';
 
@@ -20,22 +21,27 @@ class My extends Component {
   }
   render() {
     const {my} = this.props;
+    const style = {
+            margin: '5px'
+        };
+    const tags = ['娱乐', '动漫', '财经', '汽车', '体育', '视频', '科技', '情感', '搞笑', '美食'];
     return (
       <div className="my">
         <div className="personIntro">
           <div className="headPortrait">< img src=""/></div>
-          <h3>Oscar Armer</h3>
+          <h3>{(my.data && my.data.nickname) ? my.data.nickname : '气泡君'}</h3>
         </div>
         <div className="myLabelCon">
           <div></div>
           <span className="myLabel">我的标签</span>
-          <button style={{outline:'none', border: 'none'}}>编辑标签</button>
+          <button style={{outline:'none', border: 'none'}} onClick={() => browserHistory.push('/settag/edit')}>编辑标签</button>
         </div>
         <div className="tagCon">
-          <div className="first"><span>TreveoHnadnson</span><span>TreveoHnadnson</span></div>
-          <div className="second"><span>TreveoHnadnsonTreveoHnadnson</span></div>
-          <div className="third"><span>TreveoHnadnson</span><span>TreveoHnadnson</span></div>
-          <div className="fourth"><span>TreveoHnadnsonTreveoHnadnson</span></div>
+          {
+            my && my.data.tags && my.data.tags.map((item, index) => {
+              <RaisedButton label={tags[item]} key={index} primary={true} style={style} />
+            })
+          }
         </div>
         <button className="escButton">
           退出登录
