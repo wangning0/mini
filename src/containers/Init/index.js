@@ -25,6 +25,7 @@ class Init extends Component {
     handleClick() {
         const { answer, question } = this.state;
         const { submitBubble, userInfo } = this.props;
+	console.log(111);
         if(!answer || !question) {
             this.setState({
                 open: true
@@ -32,7 +33,9 @@ class Init extends Component {
             return;
         }
         const geolocation = new window.qq.maps.Geolocation();
+	console.log(11);
         geolocation.getLocation(function(position) {
+	console.log(position)
             submitBubble({
                 service: "Act.insertBubbleInfo",
                 bu_answer: answer,
