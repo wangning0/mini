@@ -21,6 +21,7 @@ class My extends Component {
   }
   render() {
     const {my} = this.props;
+    console.log(my.data && my.data.tags);
     const style = {
             margin: '5px'
         };
@@ -38,8 +39,9 @@ class My extends Component {
         </div>
         <div className="tagCon">
           {
-            my && my.data.tags && my.data.tags.map((item, index) => {
-              <RaisedButton label={tags[item]} key={index} primary={true} style={style} />
+            my.data && my.data.tags && my.data.tags.map((item, index) => {
+              const tag = tags[item];
+              return <RaisedButton label={tag} key={index} primary={true} style={style} />
             })
           }
         </div>

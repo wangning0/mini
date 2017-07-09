@@ -22,11 +22,11 @@ export function submitTagFail(error) {
 
 
 export function submitTag(data, type) {
-    // alert(data);
     return (dispatch) => {
         get(api, data).then(onSuccess, onError('提交失败'))
           .then(res => {
               if(res.data.code == 0) {
+                  console.log(type, 11);
                   if(type == 'init') {
                       browserHistory.push('/graph');
                   } else {

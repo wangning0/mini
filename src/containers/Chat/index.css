@@ -34,6 +34,9 @@ html,body,#root,.App, .chat{height:100%;margin:0;padding:0;}
     width: 100%;
     overflow-x: hidden;
 }
+.chat-conatiners.friend {
+    height: 82%;
+}
 
 .input-area {
     width: 100%;

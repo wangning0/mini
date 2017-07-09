@@ -126,7 +126,7 @@ class Chat extends Component {
                             </div>
                         )
                 }
-                <div className="chat-conatiners">
+                <div className={ params.friend === "friend" ? "chat-conatiners friend" : "chat-conatiners"}>
                     <List>
                         {
                             chat && chat.map((item, index) => {
