@@ -91,3 +91,26 @@ Compiled with warnings.
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
+Compiling...
+Failed to compile.
+
+./src/containers/Chat/index.js
+Syntax error: Unexpected token (35:1)
+
+  33 |         socket.on('connect', function () {
+  34 |             // socket.emit('join', userInfo.username);
+> 35 | <<<<<<< HEAD
+     |  ^
+  36 | //            alert(params.userId, 'hello');
+  37 | =======
+  38 |             //alert(params.userId, 'hello');
+Compiling...
+Failed to compile.
+
+./src/containers/Graph/actionTypes.js
+Syntax error: Unexpected token, expected { (3:7)
+
+  1 | export const FETCH_BUBBLE_INFO_SUCCESS = "FETCH_BUBBLE_INFO_SUCCESS";
+  2 | export const FETCH_BUBBLE_INFO_ERROR = "FETCH_BUBBLE_INFO_ERROR";
+> 3 | export console GET_CURRENT_NAME = 'GET_CURRENT_NAME';
+    |        ^

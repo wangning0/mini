@@ -1,6 +1,7 @@
 import {
     CHANGE_BUBBLES,
-    GET_UNSER_INFO
+    GET_UNSER_INFO,
+    GET_CURRENT_NAME
 } from './actionTypes';
 const $ = window.$; // eslint-disable-line
 // alert($.testinfo());
@@ -23,6 +24,10 @@ function reducer(state = initialState, action) {
             return Object.assign({}, state, {
                 numofBubbles: Number(action.result) + Number(state.numofBubbles)
             });
+        case GET_CURRENT_NAME:
+            return Object.assign({}, data, {
+                cur_username: action.result
+            })
         case GET_UNSER_INFO:
             return action.result;
         default: 

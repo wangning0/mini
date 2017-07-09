@@ -1,2 +1,3 @@
 export const CHANGE_BUBBLES = 'CHANGE_BUBBLES';
 export const GET_UNSER_INFO = 'GET_UNSER_INFO';
+export const GET_CURRENT_NAME = 'GET_CURRENT_NAME';
