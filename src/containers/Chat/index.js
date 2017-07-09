@@ -32,7 +32,7 @@ class Chat extends Component {
         const { userInfo, getChatMessage, clearMessage, params } = this.props;
         socket.on('connect', function () {
             // socket.emit('join', userInfo.username);
-            alert(params.userId, 'hello');
+            //alert(params.userId, 'hello');
             socket.emit('join', params.userId);
         });
         socket.on('new message', data => {
