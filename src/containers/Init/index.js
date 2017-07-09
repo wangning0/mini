@@ -25,29 +25,37 @@ class Init extends Component {
     handleClick() {
         const { answer, question } = this.state;
         const { submitBubble, userInfo } = this.props;
-	console.log(111);
         if(!answer || !question) {
             this.setState({
                 open: true
             })
             return;
         }
-        const geolocation = new window.qq.maps.Geolocation();
-	console.log(11);
-        geolocation.getLocation(function(position) {
-	console.log(position)
-            submitBubble({
+       //const geolocation = new window.qq.maps.Geolocation(); 22.5404030613
+        // geolocation.getLocation(function(position) {
+        //     submitBubble({
+        //         service: "Act.insertBubbleInfo",
+        //         bu_answer: answer,
+        //         bu_question: question,
+        //         longtitude: position.lng,
+        //         latitude: position.lat,
+        //         UserID: userInfo.UserID,
+        //         token: userInfo.token
+        //     }, {
+        //         numofBubbles: userInfo && userInfo.numofBubbles
+        //     })
+        // })
+        submitBubble({
                 service: "Act.insertBubbleInfo",
                 bu_answer: answer,
                 bu_question: question,
-                longtitude: position.lng,
-                latitude: position.lat,
+                longtitude: ',113.9345065627',
+                latitude: '22.5404030613',
                 UserID: userInfo.UserID,
                 token: userInfo.token
             }, {
                 numofBubbles: userInfo && userInfo.numofBubbles
             })
-        })
     }
 
     handleQusInput(e) {
