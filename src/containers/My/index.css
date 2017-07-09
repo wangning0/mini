@@ -109,4 +109,6 @@
   position: fixed;
   bottom: 15%;
   left: 7%;
+  outline: none;
+  border: none;
 }
